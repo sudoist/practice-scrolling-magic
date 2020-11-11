@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: "Source Sans Pro", Arial, sans-serif;
-            background-color: #c7e1ff;
+            background-color: #555555;
             font-size: 13px;
             -webkit-tap-highlight-color: rgba(0,0,0,0);
             margin:0;
@@ -37,6 +37,111 @@
             position:relative;
             font-size:30px;
         }
+
+    /*    */
+        .digit {
+            opacity: 0;
+            -webkit-transform: translateX(-40px);
+            -moz-transform: translateX(-40px);
+            -ms-transform: translateX(-40px);
+            -o-transform: translateX(-40px);
+            transform: translateX(-40px);
+            -webkit-transition: all 0.6s ease-out;
+            -moz-transition: all 0.6s ease-out;
+            -ms-transition: all 0.6s ease-out;
+            -o-transition: all 0.6s ease-out;
+            transition: all 0.6s ease-out;
+        }
+        .digit.visible {
+            opacity: 1;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            transform: none;
+        }
+        .digit:nth-child(1) {
+            margin-top: 200px;
+        }
+        .digit:nth-child(2) {
+            margin-top: 400px;
+        }
+        .digit:nth-child(3) {
+            margin-top: 600px;
+        }
+        .digit:nth-child(4) {
+            margin-top: 800px;
+        }
+        .digit:nth-child(5) {
+            margin-top: 1000px;
+        }
+
+        /*
+            colors
+        */
+
+        .box1.outline, .box2.outline, .box3.outline {
+            border: 1px solid white;
+        }
+        .blue {
+            background-color: #3883d8;
+        }
+        .turqoise {
+            background-color: #38ced7;
+        }
+        .brown {
+            background-color: #a66f28;
+        }
+        .bordeaux {
+            background-color: #953543;
+        }
+        .skin {
+            background-color: #ED9F4C;
+        }
+        .black {
+            background-color: #000000;
+        }
+        .white {
+            background-color: #FFFFFF;
+        }
+        .red {
+            background-color: #cf3535;
+        }
+        .green {
+            background-color: #22d659;
+        }
+        .orange {
+            background-color: #ea6300;
+        }
+        .box1, .box2, .box3 {
+            display: inline-block;
+            position: relative;
+            border-radius: 8px;
+            border: 0px solid white;
+            text-align: center;
+            vertical-align: middle;
+            padding: 0 5px;
+            margin-bottom: 200px;
+        }
+        .box1 {
+            min-width: 100px;
+            height: 100px;
+            margin: 0 auto 0 auto;
+        }
+        #reveal-elements .digit {
+            vertical-align: top;
+        }
+        #reveal-elements .digit p {
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .content-1 {
+            padding: 30px;
+            margin: 100px;
+            line-height: 25px;
+            font-size: 1.25rem;
+        }
     </style>
 
 
@@ -44,10 +149,10 @@
 <body>
 <!--<div style="height:100%;background:#000;text-align:center;"><b>OUTSIDE OF PIN CONTAINER</b></div>-->
 <div id="pinContainer">
-    <div class="panel first" style="background:#111;">
+    <div class="panel first">
         <b>FIRST SLIDE</b>
         <div id="imagesequence">
-            <img id="myimg" src="../../assets/img/example_imagesequence_01.png"><br>
+            <img id="myimg" src="http://scrollmagic.io/assets/img/example_imagesequence_01.png"><br>
         </div>
     </div>
     <div class="panel second" style="background:#333;">
@@ -64,10 +169,48 @@
     </div>
 </div>
 
+<div class="panel" style="background:#555555;">
+    <div id="reveal-elements" style="float: left; width: 50%">
+        <div class="box1 digit blue"><p>1</p></div>
+        <div class="box1 digit turqoise"><p>2</p></div>
+        <div class="box1 digit red"><p>3</p></div>
+        <div class="box1 digit green"><p>4</p></div>
+        <div class="box1 digit orange"><p>5</p></div>
+    </div>
+    <div style="float: right; color: red; width: 50%">
+        <p class="content-1">
+            01
+            Cras vel felis in risus mattis tristique
+            Proin porttitor sodales ornare. Mauris vestibulum, eros sit amet lacinia vestibulum, odio ex tincidunt urna, ut fermentum tellus sem id purus.
+            Cras in tempor nisl.
+            Donec dignissim blandit odio id malesuada. Mauris nisi neque, ornare vitae mi laoreet, aliquet tristique lorem.
+        </p>
+        <p class="content-1">
+            02
+            Curabitur fringilla, dolor eget finibus pretium
+            Nulla imperdiet sagittis mauris sit amet pellentesque. Morbi varius sodales est. Pellentesque tincidunt tincidunt est non convallis.
+            Phasellus imperdiet at nisl et iaculis.
+            Praesent bibendum nisl nec suscipit ultricies. Morbi ut velit efficitur purus feugiat cursus id sit amet nisi.
+        </p>
+        <p class="content-1">
+            03
+            Etiam orci est, mattis eget commodo vel
+            Quisque tincidunt justo sapien, at maximus nibh feugiat in. Curabitur sollicitudin, dolor id laoreet dignissim, lectus augue sagittis justo, eu imperdiet velit nisi quis ligula.
+            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi faucibus efficitur urna ut elementum.
+        </p>
+        <p class="content-1">
+            04
+            Nullam quis lacinia leo
+            Vestibulum viverra ipsum feugiat tortor porta sollicitudin. Nulla tristique nunc in nisl consequat commodo. Morbi placerat tempor tortor, eget bibendum purus.
+            Sed eget molestie odio, eu convallis metus. Mauris eget neque mi. Duis a lorem sodales, congue diam lobortis, aliquam ligula.
+        </p>
+    </div>
+</div>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
 <script>
     $(function () { // wait for document ready
 
@@ -105,7 +248,7 @@
         // build scene
         var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 300})
             .setTween(tween)
-            // .addIndicators() // add indicators (requires plugin)
+            .addIndicators() // add indicators (requires plugin)
             .addTo(controller);
 
         // handle form change
@@ -128,6 +271,19 @@
             .setPin("#pinContainer")
             .setTween(wipeAnimation)
             .addTo(controller);
+
+        // build scenes - reveal on scroll
+        var revealElements = document.getElementsByClassName("digit");
+        for (var i=0; i<revealElements.length; i++) { // create a scene for each element
+            new ScrollMagic.Scene({
+                triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
+                offset: 90,												 // start a little later
+                triggerHook: 0.9,
+            })
+                .setClassToggle(revealElements[i], "visible") // add class toggle
+                .addIndicators({name: "digit " + (i+1) }) // add indicators (requires plugin)
+                .addTo(controller);
+        }
     });
 </script>
 </body>
