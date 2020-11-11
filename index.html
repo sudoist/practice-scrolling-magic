@@ -2,43 +2,48 @@
 <html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Josefin+Slab:400,700italic' rel='stylesheet' type='text/css'>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Josefin+Slab:400,700italic'
+          rel='stylesheet' type='text/css'>
     <style>
         body {
             font-family: "Source Sans Pro", Arial, sans-serif;
             background-color: #555555;
             font-size: 13px;
-            -webkit-tap-highlight-color: rgba(0,0,0,0);
-            margin:0;
-            padding:0;
-            color:#fff;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            margin: 0;
+            padding: 0;
+            color: #fff;
         }
+
         body, html {
             height: 100%
         }
+
         #pinContainer {
             width: 100%;
             height: 100%;
             overflow: hidden;
         }
+
         .panel {
             height: 100%;
             width: 100%;
             position: absolute;
-            text-align:center;
+            text-align: center;
         }
+
         b {
             top: 50%;
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-            position:relative;
-            font-size:30px;
+            position: relative;
+            font-size: 30px;
         }
 
-    /*    */
+        /*    */
         .digit {
             opacity: 0;
             -webkit-transform: translateX(-40px);
@@ -52,6 +57,7 @@
             -o-transition: all 0.6s ease-out;
             transition: all 0.6s ease-out;
         }
+
         .digit.visible {
             opacity: 1;
             -webkit-transform: none;
@@ -60,18 +66,23 @@
             -o-transform: none;
             transform: none;
         }
+
         .digit:nth-child(1) {
             margin-top: 200px;
         }
+
         .digit:nth-child(2) {
             margin-top: 400px;
         }
+
         .digit:nth-child(3) {
             margin-top: 600px;
         }
+
         .digit:nth-child(4) {
             margin-top: 800px;
         }
+
         .digit:nth-child(5) {
             margin-top: 1000px;
         }
@@ -83,36 +94,47 @@
         .box1.outline, .box2.outline, .box3.outline {
             border: 1px solid white;
         }
+
         .blue {
             background-color: #3883d8;
         }
+
         .turqoise {
             background-color: #38ced7;
         }
+
         .brown {
             background-color: #a66f28;
         }
+
         .bordeaux {
             background-color: #953543;
         }
+
         .skin {
             background-color: #ED9F4C;
         }
+
         .black {
             background-color: #000000;
         }
+
         .white {
             background-color: #FFFFFF;
         }
+
         .red {
             background-color: #cf3535;
         }
+
         .green {
             background-color: #22d659;
         }
+
         .orange {
             background-color: #ea6300;
         }
+
         .box1, .box2, .box3 {
             display: inline-block;
             position: relative;
@@ -123,14 +145,17 @@
             padding: 0 5px;
             margin-bottom: 200px;
         }
+
         .box1 {
             min-width: 100px;
             height: 100px;
             margin: 0 auto 0 auto;
         }
+
         #reveal-elements .digit {
             vertical-align: top;
         }
+
         #reveal-elements .digit p {
             font-size: 35px;
             font-weight: bold;
@@ -181,36 +206,46 @@
         <p class="content-1">
             01
             Cras vel felis in risus mattis tristique
-            Proin porttitor sodales ornare. Mauris vestibulum, eros sit amet lacinia vestibulum, odio ex tincidunt urna, ut fermentum tellus sem id purus.
+            Proin porttitor sodales ornare. Mauris vestibulum, eros sit amet lacinia vestibulum, odio ex tincidunt urna,
+            ut fermentum tellus sem id purus.
             Cras in tempor nisl.
-            Donec dignissim blandit odio id malesuada. Mauris nisi neque, ornare vitae mi laoreet, aliquet tristique lorem.
+            Donec dignissim blandit odio id malesuada. Mauris nisi neque, ornare vitae mi laoreet, aliquet tristique
+            lorem.
         </p>
         <p class="content-1">
             02
             Curabitur fringilla, dolor eget finibus pretium
-            Nulla imperdiet sagittis mauris sit amet pellentesque. Morbi varius sodales est. Pellentesque tincidunt tincidunt est non convallis.
+            Nulla imperdiet sagittis mauris sit amet pellentesque. Morbi varius sodales est. Pellentesque tincidunt
+            tincidunt est non convallis.
             Phasellus imperdiet at nisl et iaculis.
-            Praesent bibendum nisl nec suscipit ultricies. Morbi ut velit efficitur purus feugiat cursus id sit amet nisi.
+            Praesent bibendum nisl nec suscipit ultricies. Morbi ut velit efficitur purus feugiat cursus id sit amet
+            nisi.
         </p>
         <p class="content-1">
             03
             Etiam orci est, mattis eget commodo vel
-            Quisque tincidunt justo sapien, at maximus nibh feugiat in. Curabitur sollicitudin, dolor id laoreet dignissim, lectus augue sagittis justo, eu imperdiet velit nisi quis ligula.
-            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi faucibus efficitur urna ut elementum.
+            Quisque tincidunt justo sapien, at maximus nibh feugiat in. Curabitur sollicitudin, dolor id laoreet
+            dignissim, lectus augue sagittis justo, eu imperdiet velit nisi quis ligula.
+            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi faucibus
+            efficitur urna ut elementum.
         </p>
         <p class="content-1">
             04
             Nullam quis lacinia leo
-            Vestibulum viverra ipsum feugiat tortor porta sollicitudin. Nulla tristique nunc in nisl consequat commodo. Morbi placerat tempor tortor, eget bibendum purus.
-            Sed eget molestie odio, eu convallis metus. Mauris eget neque mi. Duis a lorem sodales, congue diam lobortis, aliquam ligula.
+            Vestibulum viverra ipsum feugiat tortor porta sollicitudin. Nulla tristique nunc in nisl consequat commodo.
+            Morbi placerat tempor tortor, eget bibendum purus.
+            Sed eget molestie odio, eu convallis metus. Mauris eget neque mi. Duis a lorem sodales, congue diam
+            lobortis, aliquam ligula.
         </p>
     </div>
 </div>
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"
+        type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"
+        type="text/javascript"></script>
 <script>
     $(function () { // wait for document ready
 
@@ -259,7 +294,7 @@
         // define movement of panels
         var wipeAnimation = new TimelineMax()
             .fromTo("div.panel.second", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
-            .fromTo("div.panel.third",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+            .fromTo("div.panel.third", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
             .fromTo("div.panel.fourth", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}) // in from top
             .fromTo("div.panel.fifth", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}); // in from bottom
         // create scene to pin and link animation
@@ -274,14 +309,14 @@
 
         // build scenes - reveal on scroll
         var revealElements = document.getElementsByClassName("digit");
-        for (var i=0; i<revealElements.length; i++) { // create a scene for each element
+        for (var i = 0; i < revealElements.length; i++) { // create a scene for each element
             new ScrollMagic.Scene({
                 triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
                 offset: 90,												 // start a little later
                 triggerHook: 0.9,
             })
                 .setClassToggle(revealElements[i], "visible") // add class toggle
-                .addIndicators({name: "digit " + (i+1) }) // add indicators (requires plugin)
+                .addIndicators({name: "digit " + (i + 1)}) // add indicators (requires plugin)
                 .addTo(controller);
         }
     });
